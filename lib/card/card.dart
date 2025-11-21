@@ -105,6 +105,14 @@ class MyCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 15,),
+                      Card(
+                        color: Colors.yellow,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+                        child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Custom border Radius Card", style: TextStyle(fontSize: 14.0)),
+                        ),
+                      ),
                     ],
                   ),
                 ),
