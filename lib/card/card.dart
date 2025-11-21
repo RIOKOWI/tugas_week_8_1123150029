@@ -54,6 +54,7 @@ class MyCard extends StatelessWidget {
                           style: TextStyle(fontSize: 12.0)),
                         ),
                       ),
+                      SizedBox(height: 15,),
                       Card(
                         margin: EdgeInsets.all(16.0),
                         child: Padding(
@@ -61,13 +62,21 @@ class MyCard extends StatelessWidget {
                         child: Text("Margin Card", style: TextStyle(fontSize: 10.0)),
                         ),
                       ),
+                      SizedBox(height: 15,),
                       Card(
+                        color: Colors.blue,
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                         side: BorderSide(color: Colors.red, width: 2),
                         ),
                         borderOnForeground: true, // false
                         child: Text("Border tidak menimpa konten", style: TextStyle(fontSize: 10.0)),
+                      ),
+                      SizedBox(height: 15,),
+                      Card(
+                        color: Colors.red,
+                        clipBehavior: Clip.antiAlias,
+                        child: Text("Anti alakk", style: TextStyle(fontSize: 14.0)),
                       ),
                     ],
                   ),
