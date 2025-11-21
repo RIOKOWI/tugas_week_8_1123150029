@@ -376,8 +376,8 @@ class MyCard extends StatelessWidget {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Icon(Icons.credit_card, color: Colors.white70, size: 32),
-                                    Icon(Icons.contactless, color: Colors.white54, size: 32),                   
+                                    Icon(Icons.credit_card, color: Colors.purple, size: 32),
+                                    Icon(Icons.contactless, color: Colors.purple, size: 32),                   
                                   ],
                                 ),
                               ),
@@ -387,7 +387,8 @@ class MyCard extends StatelessWidget {
                               child: Text('1111  2222  4444  5555',
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
-                                  fontSize: 20
+                                  fontSize: 20,
+                                  color: Colors.purple,
                                 ),
                               ),
                             ),
@@ -396,7 +397,11 @@ class MyCard extends StatelessWidget {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text('Rio Achyar'),
+                                  Text('Rio Achyar',
+                                    style: TextStyle(
+                                      color: Colors.purple,              
+                                    ),
+                                  ),
                                   Stack(
                                     children: [
                                     Container(
@@ -429,19 +434,39 @@ class MyCard extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text('Expiry Date'),
-                                      Text('11/2004'),
+                                      Text('Expiry Date',
+                                        style: TextStyle(
+                                          color: Colors.purple,
+                                        ),
+                                      ),
+                                      Text('11/2004',
+                                        style: TextStyle(
+                                          color: Colors.purple,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text('Expiry Date'),
-                                      Text('11/2004'),
+                                      Text('Expiry Date',
+                                        style: TextStyle(
+                                          color: Colors.purple,
+                                        ),
+                                      ),
+                                      Text('11/2004',
+                                        style: TextStyle(
+                                          color: Colors.purple,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   SizedBox(height: 50,),
-                                  Text('MasterCard')
+                                  Text('MasterCard',
+                                        style: TextStyle(
+                                          color: Colors.purple,
+                                        ),
+                                      )
                                 ],
                               ),
                             ),
