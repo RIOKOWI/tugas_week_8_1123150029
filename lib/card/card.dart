@@ -235,7 +235,7 @@ class MyCard extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Column(
                                     children: [
@@ -245,6 +245,7 @@ class MyCard extends StatelessWidget {
                                           color: Color.fromRGBO(255, 123, 0, 1),
                                         ),
                                       ),
+                                      SizedBox(height: 5,),
                                       Text('Followers',
                                         style: TextStyle(
                                           fontSize: 14,
