@@ -391,33 +391,60 @@ class MyCard extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Rio Achyar'),
-                                Stack(
-                                  children: [
-                                  Container(
-                                  width: 30,
-                                  height: 30,
-                                  decoration: const BoxDecoration(
-                                    color: Color(0xFFEB001B),
-                                    shape: BoxShape.circle,
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('Rio Achyar'),
+                                  Stack(
+                                    children: [
+                                    Container(
+                                      width: 30,
+                                      height: 30,
+                                      decoration: const BoxDecoration(
+                                        color: Color(0xFFEB001B),
+                                        shape: BoxShape.circle,
+                                      ),
+                                    ),
+                                    Container(
+                                        margin: EdgeInsets.only(left: 15),
+                                        width: 30,
+                                        height: 30,
+                                        decoration: BoxDecoration(
+                                          color: Color(0xFFF79E1B),
+                                          shape: BoxShape.circle,
+                                        ),
+                                      ),
+                                    ],
                                   ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text('Expiry Date'),
+                                      Text('11/2004'),
+                                    ],
                                   ),
-                                  Container(
-                                  margin: EdgeInsets.only(left: 15),
-                                  width: 30,
-                                  height: 30,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFFF79E1B),
-                                    shape: BoxShape.circle,
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text('Expiry Date'),
+                                      Text('11/2004'),
+                                    ],
                                   ),
-                                  ),
-                                  ],
-),
-                              ],
-                            )
+                                  SizedBox(height: 50,),
+                                  Text('MasterCard')
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
