@@ -370,7 +370,7 @@ class MyCard extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Align(
                                 alignment: Alignment.topCenter,
                                 child: Row(
@@ -384,10 +384,39 @@ class MyCard extends StatelessWidget {
                             ),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Text('1111 2222 4444 5555',
+                              child: Text('1111  2222  4444  5555',
                                 textAlign: TextAlign.start,
-                                
+                                style: TextStyle(
+                                  fontSize: 20
+                                ),
                               ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text('Rio Achyar'),
+                                Stack(
+                                  children: [
+                                  Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFFEB001B),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  ),
+                                  Container(
+                                  margin: EdgeInsets.only(left: 15),
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFF79E1B),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  ),
+                                  ],
+),
+                              ],
                             )
                           ],
                         ),
