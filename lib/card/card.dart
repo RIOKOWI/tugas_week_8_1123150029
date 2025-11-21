@@ -389,6 +389,7 @@ class MyCard extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 20,
                                   color: Colors.purple,
+                                  fontWeight: FontWeight.bold
                                 ),
                               ),
                             ),
@@ -399,7 +400,8 @@ class MyCard extends StatelessWidget {
                                 children: [
                                   Text('Rio Achyar',
                                     style: TextStyle(
-                                      color: Colors.purple,              
+                                      color: Colors.purple,   
+                                      fontWeight: FontWeight.bold           
                                     ),
                                   ),
                                   Stack(
@@ -442,6 +444,7 @@ class MyCard extends StatelessWidget {
                                       Text('11/2004',
                                         style: TextStyle(
                                           color: Colors.purple,
+                                          fontWeight: FontWeight.bold
                                         ),
                                       ),
                                     ],
@@ -449,14 +452,15 @@ class MyCard extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text('Expiry Date',
+                                      Text('CVV',
                                         style: TextStyle(
                                           color: Colors.purple,
                                         ),
                                       ),
-                                      Text('11/2004',
+                                      Text('9696',
                                         style: TextStyle(
                                           color: Colors.purple,
+                                          fontWeight: FontWeight.bold
                                         ),
                                       ),
                                     ],
@@ -465,6 +469,7 @@ class MyCard extends StatelessWidget {
                                   Text('MasterCard',
                                         style: TextStyle(
                                           color: Colors.purple,
+                                          fontWeight: FontWeight.bold
                                         ),
                                       )
                                 ],
