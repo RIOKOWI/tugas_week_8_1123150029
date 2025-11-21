@@ -29,6 +29,13 @@ class MyCard extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         color: Colors.red,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10,
+                            offset: Offset(0, 4)
+                          )
+                        ]
                       ),
                       child: Text(
                         'Container 1',
