@@ -19,9 +19,11 @@ class MyCard extends StatelessWidget {
                       color: Colors.red,
                       child: Text(
                         'Card 1',
-                        
                       ),
                     ),
+                    SizedBox(height: 5,),
+                    Text('Perbandingan Card dengan Container'),
+                    SizedBox(height: 5,),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
