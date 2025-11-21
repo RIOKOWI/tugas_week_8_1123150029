@@ -44,6 +44,7 @@ class MyCard extends StatelessWidget {
                     SizedBox(height: 15,),
                     Card(
                       color: Colors.red,
+                      margin: EdgeInsets.all(16.0),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5)
                       ),
