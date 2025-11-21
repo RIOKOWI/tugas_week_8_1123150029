@@ -231,6 +231,11 @@ class MyCard extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            Row(
+                              children: [
+                                
+                              ],
+                            )
                           ],
                         ),
                         
