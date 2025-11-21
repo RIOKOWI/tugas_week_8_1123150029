@@ -352,7 +352,24 @@ class MyCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                )
+                ),
+                SizedBox(height: 20,),
+                Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  elevation: 20,
+                  child: Container(
+                    height: 220,
+                    width: 350,
+                    decoration: BoxDecoration(
+                      color: const Color.fromRGBO(204, 255, 0, 1),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 100,)
               ],
             ),
           ),
