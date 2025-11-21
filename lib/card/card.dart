@@ -366,12 +366,15 @@ class MyCard extends StatelessWidget {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Icon(Icons.credit_card, color: Colors.white70, size: 32),
-                              Icon(Icons.contactless, color: Colors.white54, size: 32),                   
-                            ],
+                          child: Align(
+                            alignment: Alignment.topCenter,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Icon(Icons.credit_card, color: Colors.white70, size: 32),
+                                Icon(Icons.contactless, color: Colors.white54, size: 32),                   
+                              ],
+                            ),
                           ),
                         ),
                       ),
