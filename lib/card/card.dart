@@ -11,50 +11,52 @@ class MyCard extends StatelessWidget {
               centerTitle: true,
               actions: const [],
             ),
-            body: Center(
-              child: Container(
-                child: Column(
-                  children: [
-                    Card(
-                      elevation: 8,
-                      color: Colors.red,
-                      child: Text(
-                        'Card 1',
-                      ),
-                    ),
-                    SizedBox(height: 15,),
-                    Text('Perbandingan Card dengan Container'),
-                    SizedBox(height: 15,),
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
+            body: SingleChildScrollView(
+              child: Center(
+                child: Container(
+                  child: Column(
+                    children: [
+                      Card(
+                        elevation: 8,
                         color: Colors.red,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black,
-                            blurRadius: 10,
-                            offset: Offset(0, 4)
-                          )
-                        ]
+                        child: Text(
+                          'Card 1',
+                        ),
                       ),
-                      child: Text(
-                        'Container 1',
+                      SizedBox(height: 15,),
+                      Text('Perbandingan Card dengan Container'),
+                      SizedBox(height: 15,),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.red,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black,
+                              blurRadius: 10,
+                              offset: Offset(0, 4)
+                            )
+                          ]
+                        ),
+                        child: Text(
+                          'Container 1',
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 15,),
-                    Card(
-                      color: Colors.red,
-                      margin: EdgeInsets.all(16.0),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                      child: Text("Shape Bingkai persegi panjang", 
-                        style: TextStyle(fontSize: 12.0)),
-                      ),
-                    )
-                  ],
+                      SizedBox(height: 15,),
+                      Card(
+                        color: Colors.red,
+                        margin: EdgeInsets.all(16.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5)
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                        child: Text("Shape Bingkai persegi panjang", 
+                          style: TextStyle(fontSize: 12.0)),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
