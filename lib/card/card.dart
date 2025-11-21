@@ -357,6 +357,7 @@ class MyCard extends StatelessWidget {
 
                 // CREDIT CARD
                 Card(
+                  elevation: 20,
                   child: Column(
                     children: [
                       Container(
@@ -441,6 +442,7 @@ class MyCard extends StatelessWidget {
                                       Text('Expiry Date',
                                         style: TextStyle(
                                           color: Colors.purple,
+                                          fontSize: 10
                                         ),
                                       ),
                                       Text('11/2004',
@@ -457,6 +459,7 @@ class MyCard extends StatelessWidget {
                                       Text('CVV',
                                         style: TextStyle(
                                           color: Colors.purple,
+                                          fontSize: 10
                                         ),
                                       ),
                                       Text('9696',
