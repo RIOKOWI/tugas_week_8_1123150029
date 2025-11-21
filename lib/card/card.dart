@@ -125,6 +125,8 @@ class MyCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15),
+
+                // TENTANG SAYA
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
                   child: Card(
@@ -160,9 +162,8 @@ class MyCard extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
 
-                // Kartu nama
+                // KARTU NAMA
                 Card(
-                  // clipBehavior: Clip.antiAlias,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -316,7 +317,15 @@ class MyCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 20,)
+                SizedBox(height: 30,),
+
+                Card(
+                  elevation: 10,
+                  margin: EdgeInsets.all(16),
+                  child: Column(
+                    
+                  ),
+                )
               ],
             ),
           ),
