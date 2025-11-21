@@ -159,13 +159,16 @@ class MyCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15),
+
+                // Kartu nama
                 Card(
                   // clipBehavior: Clip.antiAlias,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        height: 150,
-                        width: double.infinity,
+                        height: 400,
+                        width: 500,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(12),
                           gradient: LinearGradient(
@@ -181,21 +184,38 @@ class MyCard extends StatelessWidget {
                             ),
                           ],
                         ),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Color.fromRGBO(255, 123, 0, 1), width: 5),
-                          ),
-                          child: Center(
-                            child: CircleAvatar(
-                              radius: 70,
-                              backgroundColor: Colors.white,
-                              foregroundImage: AssetImage('assets/images/cungpruy.jpg'),
-                              
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Color.fromRGBO(255, 123, 0, 1), width: 5),
+                                ),
+                                child: Center(
+                                  child: CircleAvatar(
+                                    radius: 70,
+                                    backgroundColor: Colors.white,
+                                    foregroundImage: AssetImage('assets/images/cungpruy.jpg'),
+                                    
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
+                            SizedBox(height: 5,),
+                            Text('Rio Achyar',
+                              style: TextStyle(
+                                color: Color.fromRGBO(255, 123, 0, 1),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 30
+                              ),
+                            )
+                          ],
                         ),
+                        
                       ),
+                      
                     ],
                   ),
                 ),
