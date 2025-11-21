@@ -231,10 +231,51 @@ class MyCard extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Row(
-                              children: [
-                                
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text('1'),
+                                      Text('Followers'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                    child: VerticalDivider(
+                                      thickness: 1,
+                                      color: Color.fromRGBO(255, 123, 0, 1),
+                                    ),
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text('1'),
+                                      Text('Followers'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                    child: VerticalDivider(
+                                      thickness: 1,
+                                      color: Color.fromRGBO(255, 123, 0, 1),
+                                    ),
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text('1'),
+                                      Text('Followers'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                    child: VerticalDivider(
+                                      thickness: 1,
+                                      color: Color.fromRGBO(255, 123, 0, 1),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             )
                           ],
                         ),
