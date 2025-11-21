@@ -320,10 +320,27 @@ class MyCard extends StatelessWidget {
                 SizedBox(height: 30,),
 
                 Card(
+                  color: Color.fromRGBO(29, 214, 95, 1),
                   elevation: 10,
                   margin: EdgeInsets.all(16),
                   child: Column(
-                    
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ListTile(
+                        leading: Image.asset('assets/images/21savage.jpeg'),
+                        title: Text('A Lot',
+                          style: TextStyle(
+                            color: Colors.black,
+                          ),
+                        ),
+                        subtitle: Text('21 Savage',
+                          style: TextStyle(
+                            color: Colors.black,            
+                          ),
+                        ),
+                      ),
+                     
+                    ],
                   ),
                 )
               ],
